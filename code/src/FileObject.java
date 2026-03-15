@@ -9,6 +9,10 @@ public class FileObject {
             // Read here
             return data;
         }
+        catch (InterruptedException e) {
+            System.out.println("FileObject read interrupted.");
+            return null;
+        }
         finally {
             lock.unlock();  // Alwasys unlocks
         }
@@ -19,6 +23,9 @@ public class FileObject {
             lock.lock();
             // Write here
             data = newData;
+        }
+        catch (InterruptedException e) {
+            System.out.println("FileObject write interrupted.");
         }
         finally {
             lock.unlock();  // Always unlocks
