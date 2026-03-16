@@ -52,7 +52,7 @@ public abstract class AIAgent extends Thread {
                     passed = checkPermissions(currentDomain, "write", randX);
                     if (passed) {
                         fileObjArr[randX].write(word);
-                        System.out.println("[Thread: " + threadNumber + "(D" + (currentDomain[0] + 1) + ")] Writing \'" + word + "\' to F" + (randX + 1) + ".");
+                        System.out.println("[Thread: " + threadNumber + "(D" + (currentDomain[0] + 1) + ")] Writing \'" + word + "\' to resource F" + (randX + 1) + ".");
                     }
                     else {
                         System.out.println("[Thread: "+threadNumber+"(D"+(currentDomain[0] + 1)+")] Operation failed, permission denied");
