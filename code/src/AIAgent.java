@@ -34,14 +34,16 @@ public abstract class AIAgent extends Thread {
             // Domain switch
             if (randX >= numFiles) {
                 newDomain = randX - numFiles;
-                System.out.println("[Thread: "+threadNumber+"(D"+(currentDomain[0] + 1)+")] Attempting to switch from D"+(currentDomain[0]+1)+" to D"+(newDomain+1)+".");
-                passed = checkPermissions(currentDomain, "switch", randX);
-                if (passed) {
-                    System.out.println("[Thread: " + threadNumber + "(D" + (currentDomain[0] + 1) + ")] Switched to D" + (newDomain+1) + ".");
-                    currentDomain[0] = newDomain;
-                }
-                else {
-                    System.out.println("[Thread: "+threadNumber+"(D"+(currentDomain[0] + 1)+")] Operation failed, permission denied");
+                if (newDomain != currentDomain[0]) {
+                    System.out.println("[Thread: "+threadNumber+"(D"+(currentDomain[0] + 1)+")] Attempting to switch from D"+(currentDomain[0]+1)+" to D"+(newDomain+1)+".");
+                    passed = checkPermissions(currentDomain, "switch", randX);
+                    if (passed) {
+                        System.out.println("[Thread: " + threadNumber + "(D" + (currentDomain[0] + 1) + ")] Switched to D" + (newDomain+1) + ".");
+                        currentDomain[0] = newDomain;
+                    }
+                    else {
+                        System.out.println("[Thread: "+threadNumber+"(D"+(currentDomain[0] + 1)+")] Operation failed, permission denied");
+                    }
                 }
             }
             else {  // File actoin
