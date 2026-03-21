@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CMPS455-OS-Project-2/.idea/Proj2.iml" filepath="$PROJECT_DIR$/CMPS455-OS-Project-2/.idea/Proj2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code.iml" filepath="$PROJECT_DIR$/code.iml" />
     </modules>
   </component>
 </project>
