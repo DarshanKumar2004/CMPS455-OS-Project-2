@@ -1,8 +1,6 @@
 // Begin code changes by Darshan Kumar.
 import java.util.*;
 import java.util.concurrent.Semaphore;
-enum Permission { READ, WRITE, READ_WRITE, ALLOW, NONE }
-
 
 public class task_3{
     private static Random random = new Random();
