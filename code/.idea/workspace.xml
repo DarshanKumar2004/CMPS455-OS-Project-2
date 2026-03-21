@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b569c7ce-e1c5-4277-a642-544ce551e6b2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/go.imports.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AIAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AIAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task_1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/task_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task_3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +48,7 @@
     "Application.task_1.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "parker",
+    "git-widget-placeholder": "task-1__Abigail",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/ihast/Documents/CMPS455/Project2/CMPS455-OS-Project-2/code",
     "project.structure.last.edited": "SDKs",
