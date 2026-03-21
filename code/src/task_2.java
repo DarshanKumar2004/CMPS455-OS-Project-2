@@ -12,7 +12,7 @@ public class task_2 {
     ;
     static AIAgent_Task2 Agents[] = new AIAgent_Task2[N];
     static ArrayList<objectAccess> accessList = new ArrayList<>(N + M);
-
+    //make each list
     static void initializeList() {
         for (int i = 0; i < M; i++) {
             accessList.add(new objectAccess(Type.FILE));
@@ -21,7 +21,7 @@ public class task_2 {
             accessList.add(new objectAccess(Type.DOMAIN));
         }
     }
-
+    //run the agents
     static void runAgents() {
         FileObject[] fileObjArr = new FileObject[M];
         for (int i = 0; i < M; i++) {
@@ -35,7 +35,7 @@ public class task_2 {
             Agents[i].start();
         }
     }
-
+    //randomize the perms
     static Permission2 pickPerm() {
         int roll = (int) (Math.random() * 3);
         switch (roll) {
@@ -46,7 +46,7 @@ public class task_2 {
         }
         return Permission2.WRITE;
     }
-
+//pop the entries for each list within the list
     static void populateEntries() {
         for (int i = 0; i < accessList.size(); i++) {
             objectAccess current = accessList.get(i);
@@ -63,6 +63,7 @@ public class task_2 {
             }
         }
     }
+    //prints the access list
     static void printAccessLists() {
         System.out.println("Access control scheme: Access Lists");
         for (int i = 0; i < accessList.size(); i++) {
@@ -88,7 +89,7 @@ public class task_2 {
         }
     }
 
-
+    //entry object
     static class objectEntry {
         int Domain;
         Permission2 permission;
@@ -113,6 +114,7 @@ public class task_2 {
     }
 
 }
+//agent / thread implementation
 class AIAgent_Task2 extends AIAgent {
     @Override
     public boolean checkPermissions(int[] currentDomainArr, String requestedAction, int objID) {
