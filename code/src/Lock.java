@@ -3,7 +3,7 @@
  * Project 2 - Lock
  */
 
-// Begin code changes by Abigail Boggs.
+// Begin code changes by Abigail Boggs
 import java.util.concurrent.Semaphore;
 
 public class Lock {
@@ -17,4 +17,4 @@ public class Lock {
         mutex.release();
     }
 }
-// End code changes by Abigail Boggs.
+// End code changes by Abigail Boggs

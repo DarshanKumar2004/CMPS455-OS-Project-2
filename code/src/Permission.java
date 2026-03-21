@@ -3,6 +3,8 @@
  * Project 2 - Permissions
  */
 
+// Begin code changes by Abigail Boggs
 public enum Permission {
     READ, WRITE, READ_WRITE, ALLOW, NONE
 }
+// End code changes by Abigail Boggs
