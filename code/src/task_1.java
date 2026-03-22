@@ -6,7 +6,8 @@
 // Begin code changes by Abigail Boggs
 import java.util.*;
 
-public class task_1 {
+public class
+task_1 {
 
     private static Random rand = new Random();
 

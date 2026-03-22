@@ -27,10 +27,18 @@ public class Main{
             case 1:
                 System.out.println("Access Control Scheme: Access Matrix");
                 task_1.run();
+                break;
             case 2:
                 System.out.println("Access Control Scheme: Access for Objects");
-
-
+                task_2.runAgents();
+                break;
+            case 3:
+                System.out.println("Access Control Scheme: Access for Capability List For Domains");
+                task_3.run();
+                break;
+            default:
+                System.out.println("Input Error. Exiting");
+                break;
         }
 
     }
