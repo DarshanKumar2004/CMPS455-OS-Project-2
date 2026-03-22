@@ -97,7 +97,7 @@ task_1 {
     static void printAccessMatrix(int domainCount, int fileObjCount) {
 
         // Display parameters
-        System.out.println("Access control scheme: Access Matrix");
+        // System.out.println("Access control scheme: Access Matrix");
         System.out.println("Domain Count: " + domainCount);
         System.out.println("Object Count: " + fileObjCount);
 

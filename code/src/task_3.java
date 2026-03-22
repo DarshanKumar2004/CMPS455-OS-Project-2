@@ -54,7 +54,7 @@ public class task_3{
 
     // Print capability list
     static void printCapabilityLists(int numDomains) {
-        System.out.println("Access control scheme: Capability List");
+//        System.out.println("Access control scheme: Capability List");
         for (int d = 0; d < numDomains; d++) {
             StringBuilder sb = new StringBuilder("D" + (d + 1) + " --> ");
             HashMap<String, Permission> caps = capabilityLists.get(d);

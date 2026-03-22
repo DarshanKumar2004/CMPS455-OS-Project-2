@@ -66,7 +66,7 @@ public class task_2 {
     }
     //prints the access list
     static void printAccessLists() {
-        System.out.println("Access control scheme: Access Lists");
+//        System.out.println("Access control scheme: Access Lists");
         for (int i = 0; i < accessList.size(); i++) {
             objectAccess current = accessList.get(i);
             String label = (current.type == Type.FILE) ? "F" + (i+1) : "D" + (i - M + 1);
