@@ -1,0 +1,4 @@
+*.class
+out/
+.idea/workspace.xml
+.idea/go.imports.xml
