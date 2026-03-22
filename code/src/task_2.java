@@ -56,7 +56,8 @@ public class task_2 {
                         current.objects.add(new objectEntry(j, pickPerm()));
                     }
                 } else if (current.type == Type.DOMAIN) {
-                    if (Math.random() < 0.5) {
+                    int domainIndex = i - M; // current domain's own index
+                    if (j != domainIndex && Math.random() < 0.5) {
                         current.objects.add(new objectEntry(j, Permission2.ALLOW));
                     }
                 }
