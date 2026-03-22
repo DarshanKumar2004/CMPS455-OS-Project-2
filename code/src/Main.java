@@ -6,7 +6,32 @@
 // Begin code changes by Chad Dauphiney
 public class Main{
     public static void main(String[] args) {
-        // Program must run/start from this file.
+        if(args.length == 0) {
+            return;
+        }
+        if(!args[0].equals("-S")) {
+            return;
+        }
+        if(args.length < 2) {
+            return;
+        }
+        int argNum;
+
+        try {
+            argNum = Integer.parseInt(args[1]);
+        } catch (NumberFormatException e) {
+            return;
+        }
+
+        switch (argNum) {
+            case 1:
+                System.out.println("Access Control Scheme: Access Matrix");
+                task_1.run();
+            case 2:
+                System.out.println("Access Control Scheme: Access for Objects");
+
+
+        }
 
     }
 }
